@@ -21,7 +21,7 @@ namespace UnrealBuildTool.Rules
 
 			PrivateIncludePaths.AddRange(
 				new string[] {
-					"Developer/UObjectPlugin/Private",
+					"Developer/TankVehiclePlugin/Private",
 					// ... add other private include paths required here ...
 				}
 				);

@@ -5,7 +5,7 @@
 	"FriendlyName": "Tank Vehicle Plugin",
 	"Description": "A pawn base class that implements tread/skid steer physics. Wraps the PhysX class.",
 	"Category": "Vehicles",
-	"CreatedBy": ["Leon Rosengarten", "Boone Adkins"],
+	"CreatedBy": "Code by Leon Rosengarten, packaging by Boone Adkins",
 	"CreatedByURL": "http://epicgames.com",
 	"DocsURL": "",
 	"MarketplaceURL": "",

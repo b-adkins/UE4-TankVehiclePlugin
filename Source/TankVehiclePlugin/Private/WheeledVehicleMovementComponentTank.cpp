@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "UObjectPluginPrivatePCH.h"
+#include "TankVehiclePluginPrivatePCH.h"
 //Copyright 2014-2015 Leon Rosengarten and Open House Studios, All Rights Reserved.
 
 //   #include "Runtime/Engine/Private/EnginePrivate.h"
