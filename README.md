@@ -2,7 +2,7 @@
 Blueprintable Unreal Engine 4 classes along the lines of WheeledVehicle, except for tanks! (Or [skid steer vehicles](https://en.wikipedia.org/wiki/Skid-steer_loader))
 
 ## Authors
-- Leon Rosengarten (code)
+- [Leon Rosengarten](https://github.com/lion03) (code)
 - Boone Adkins (packaged into plugin)
 
 # Usage
