@@ -1,4 +1,4 @@
-//Copyright 2014-2015 Leon Rosengarten and Open House Studios, All Rights Reserved.
+//Copyright 2014-2016 Leon Rosengarten and Open House Studios
 
 #pragma once
 

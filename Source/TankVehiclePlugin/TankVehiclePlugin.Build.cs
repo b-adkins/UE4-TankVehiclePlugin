@@ -1,4 +1,4 @@
-// Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
+//Copyright 2014-2016 Leon Rosengarten and Open House Studios
 
 namespace UnrealBuildTool.Rules
 {

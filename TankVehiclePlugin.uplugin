@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "Tank Vehicle Plugin",
-	"Description": "A pawn base class that implements tread/skid steer physics. Wraps the PhysX class.",
+	"Description": "A pawn base class that implements tread/skid steer physics. Wraps the PhysX class. Copyright 2014-2016 Leon Rosengarten and Open House Studios.",
 	"Category": "Vehicles",
 	"CreatedBy": "Code by Leon Rosengarten, packaging by Boone Adkins",
 	"CreatedByURL": "http://epicgames.com",

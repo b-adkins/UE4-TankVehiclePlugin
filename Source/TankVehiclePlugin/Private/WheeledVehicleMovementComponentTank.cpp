@@ -1,9 +1,7 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+//Copyright 2014-2016 Leon Rosengarten and Open House Studios
 
 #include "TankVehiclePluginPrivatePCH.h"
-//Copyright 2014-2015 Leon Rosengarten and Open House Studios, All Rights Reserved.
 
-//   #include "Runtime/Engine/Private/EnginePrivate.h"
 #include "WheeledVehicleMovementComponentTank.h"
 #include "PhysicsPublic.h"
 
@@ -15,8 +13,6 @@
 #if WITH_VEHICLE
 #include "PhysXIncludes.h"
 #endif // WITH_VEHICLE
-
-
 
 // @third party code - END PhysX
 
