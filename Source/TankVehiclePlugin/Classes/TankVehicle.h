@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "GameFramework/WheeledVehicle.h"
+#include "WheeledVehicle.h"
 #include "TankVehicle.generated.h"
 
 UCLASS()

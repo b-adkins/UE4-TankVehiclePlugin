@@ -7,8 +7,7 @@
 
 // @third party code - BEGIN PhysX
 
-#define WITH_VEHICLE 1
-#define WITH_EDITOR 1
+
 
 #if WITH_VEHICLE
 #include "PhysXIncludes.h"

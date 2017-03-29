@@ -1,7 +1,8 @@
 //Copyright 2014-2016 Leon Rosengarten and Open House Studios
 
 #pragma once
-#include "Vehicles/VehicleAnimInstance.h"
+
+#include "VehicleAnimInstance.h"
 #include "TankAnimInstance.generated.h"
 
 UCLASS(transient)

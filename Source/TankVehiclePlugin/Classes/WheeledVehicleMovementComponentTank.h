@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "Vehicles/WheeledVehicleMovementComponent.h"
-#include "Vehicles/WheeledVehicleMovementComponent4W.h"
+#include "WheeledVehicleMovementComponent.h"
+#include "WheeledVehicleMovementComponent4W.h"
 #include "WheeledVehicleMovementComponentTank.generated.h"
-
+#define WITH_VEHICLE 1
+#define WITH_EDITOR 1
 
 UENUM(BlueprintType)
 enum class VehicleDriveTankControlModel : uint8
@@ -74,6 +75,9 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Tank Setup")
 		uint32 NumOfWheels;
+
+
+	
 
 	UPROPERTY(EditAnywhere, Category = "Tank Setup")
 		VehicleDriveTankControlModel TankControlModel;
