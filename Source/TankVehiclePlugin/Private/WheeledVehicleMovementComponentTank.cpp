@@ -6,7 +6,7 @@
 #include "PhysicsPublic.h"
 
 // @third party code - BEGIN PhysX
-
+#include "Runtime/Engine/Private/PhysicsEngine/PhysXSupport.h"
 
 
 #if WITH_VEHICLE
@@ -218,7 +218,16 @@ void UWheeledVehicleMovementComponentTank::SetupVehicle()
 	PxVehicleDriveTank* PVehicleDriveTank = PxVehicleDriveTank::allocate(WheelSetups.Num());
 	check(PVehicleDriveTank);
 
-	PVehicleDriveTank->setup(GPhysXSDK, UpdatedPrimitive->GetBodyInstance()->GetPxRigidDynamic(), *PWheelsSimData, DriveData, WheelSetups.Num());
+	// Scene locking to avoid compiler complaining about deprecated call to GetPxRigidDynamic()
+	UWorld* world = GetWorld();
+	check(world);
+	FPhysScene* u_phys_scene = world->GetPhysicsScene();
+	PxScene* phys_scene = u_phys_scene->GetPhysXScene(PST_Sync);
+	phys_scene->lockWrite();
+	PVehicleDriveTank->setup(GPhysXSDK, UpdatedPrimitive->GetBodyInstance()->GetPxRigidDynamic_AssumesLocked(), *PWheelsSimData, DriveData, WheelSetups.Num());
+	//	PxScene::unlockWrite();
+	phys_scene->unlockWrite();
+
 	PVehicleDriveTank->setToRestState();
 
 	// cleanup
